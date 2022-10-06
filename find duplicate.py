@@ -1,12 +1,10 @@
-# Initialize array
-arr = [1, 2,  4, 2, 7, 8, 8, 3]
-count = 0
+A = [1, 2, 3, 4, 5, 6, 4]
+B = [4, 5]
 
-print("Duplicate elements in given array: ")
-# Searches for duplicate element
-for i in range(0, len(arr)):
-    for j in range(i+1, len(arr)):
-        if (arr[i] == arr[j]):
 
-            count = count+1
-            print(arr[i])
+for i in range(0, len(A)):
+    for j in range(0, len(B)):
+        if A[i] == B[j]:
+            continue
+        elif A[i] != B[j]:
+            print(A[i], end=" ")
